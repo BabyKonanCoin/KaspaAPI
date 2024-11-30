@@ -5,25 +5,20 @@ online version:
 schema: 2.0.0
 ---
 
-# Import-KasAddressPool
+# Write-KasLogMessage
 
 ## SYNOPSIS
-Imports a pool of addresses from a CSV file.
+{{ Fill in the Synopsis }}
 
 ## SYNTAX
 
 ```
-Import-KasAddressPool [[-FilePath] <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Write-KasLogMessage [[-Message] <String>] [-ToFile] [[-Path] <String>] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-This function imports a pool of addresses from a CSV file.
-You can either
-provide the file path directly via the \`-FilePath\` parameter or use a file
-selection dialog to choose the file.
-The function extracts only the
-\`address\` field from the CSV and returns the addresses while displaying
-their count.
+{{ Fill in the Description }}
 
 ## EXAMPLES
 
@@ -36,8 +31,23 @@ PS C:\> {{ Add example code here }}
 
 ## PARAMETERS
 
-### -FilePath
-Optional file path to a CSV file
+### -Message
+{{ Fill Message Description }}
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Path
+{{ Fill Path Description }}
 
 ```yaml
 Type: String
@@ -46,6 +56,21 @@ Aliases:
 
 Required: False
 Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ToFile
+{{ Fill ToFile Description }}
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -71,8 +96,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### None
+
 ## OUTPUTS
 
+### System.Object
 ## NOTES
 
 ## RELATED LINKS

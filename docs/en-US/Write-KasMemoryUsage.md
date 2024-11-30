@@ -5,7 +5,7 @@ online version:
 schema: 2.0.0
 ---
 
-# Get-KasUniqueAddresses
+# Write-KasMemoryUsage
 
 ## SYNOPSIS
 {{ Fill in the Synopsis }}
@@ -13,7 +13,7 @@ schema: 2.0.0
 ## SYNTAX
 
 ```
-Get-KasUniqueAddresses [-InputFilePath] <String> [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Write-KasMemoryUsage [-ToFile] [[-Path] <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,16 +30,31 @@ PS C:\> {{ Add example code here }}
 
 ## PARAMETERS
 
-### -InputFilePath
-{{ Fill InputFilePath Description }}
+### -Path
+{{ Fill Path Description }}
 
 ```yaml
 Type: String
 Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ToFile
+{{ Fill ToFile Description }}
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False

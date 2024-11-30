@@ -78,6 +78,9 @@ function Start-KasTest {
     )
 
     begin {
+
+        Get-KasMenu
+
         # Generate paths for output files based on specified parameters.
         if ($AppenedUniqueAddresses) {
             $AppenedUAPath = Get-KasDatedFileName -FileNamePrefix "UniqueAddress" `
