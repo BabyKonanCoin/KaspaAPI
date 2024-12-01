@@ -13,11 +13,11 @@ function Get-KasBanner {
 |_|
 " -ForegroundColor Green
 
-Write-Host "
-by Baby Konan Coin
-version 0.1.0
-https://babykonancoin.io/KaspaAPI
-" -ForegroundColor Gray
+    $credits =  "Baby Konan Coin" +
+                "`n version 0.1.0" +
+                "https://babykonancoin.io/KaspaAPI"
+
+    Write-Host "$credits " -ForegroundColor Gray
 }
 
 

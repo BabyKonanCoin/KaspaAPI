@@ -1,4 +1,54 @@
 site_name: KaspaAPI by Baby Konan
+site_description: "PowerShell module that interacts with Kaspa Explorer API and Kasplex API to allow for analyzing KRC20 token information."
+site_author: 'Baby Konan Coin'
 repo_url: https://github.com/BabyKonanCoin/KaspaAPI
-theme: readthedocs
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Configuration: getting-started/configuration.md
+      - Usage Guide: getting-started/usage.md
+  - Commands:
+      - Get-KasAppDataPath: en-US/Get-KasAppDataPath.md
+      - Get-KasBanner: en-US/Get-KasBanner.md
+      - Get-KasDataDump: en-US/Get-KasDataDump.md
+      - Get-KasDatedFileName: en-US/Get-KasDatedFileName.md
+      - Get-KasTop50: en-US/Get-KasTop50.md
+      - Get-KasTx: en-US/Get-KasTx.md
+      - Get-KasTxLatestBlockTime: en-US/Get-KasTxLatestBlockTime.md
+      - Import-KasAddressPool: en-US/Import-KasAddressPool.md
+      - Invoke-KasJobResult: en-US/Invoke-KasJobResult.md
+      - Invoke-KasMenu: en-US/Invoke-KasMenu.md
+      - New-KasAppDataPath: en-US/New-KasAppDataPath.md
+      - New-KasUniqueAddresses: en-US/New-KasUniqueAddresses.md
+      - Show-KasMenu: en-US/Show-KasMenu.md
+      - Start-KasBlockTxKrc20: en-US/Start-KasBlockTxKrc20.md
+      - Start-KasKrc20BalanceJobs: en-US/Start-KasKrc20BalanceJobs.md
+      - Start-KasTest: en-US/Start-KasTest.md
+      - Start-KasTest2: en-US/Start-KasTest2.md
+      - Use-KasFileWriteMutex: en-US/Use-KasFileWriteMutex.md
+      - Write-KasLogMessage: en-US/Write-KasLogMessage.md
+      - Write-KasMemoryUsage: en-US/Write-KasMemoryUsage.md
+      - Write-KasPageFileUsage: en-US/Write-KasPageFileUsage.md
+  - Changelog: changelog.md
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -63,3 +63,6 @@ if ($PSCmdlet.ParameterSetName -eq 'Help') {
     Invoke-psake -buildFile $psakeFile -taskList $Task -nologo -properties $Properties -parameters $Parameters
     exit ([int](-not $psake.build_success))
 }
+
+
+
