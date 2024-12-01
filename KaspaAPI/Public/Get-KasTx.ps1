@@ -26,7 +26,7 @@ function Get-KasTx {
     }
 
     # API setup
-    $endpoint = 'https://api.kaspa.org'
+    $endpoint = $script:KaspaExlorerAPI
     $addressesPath = 'addresses'
     $fullTransactionsPageEndpoint = 'full-transactions-page'
 

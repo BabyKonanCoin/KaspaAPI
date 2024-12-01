@@ -1,14 +1,13 @@
 site_name: KaspaAPI by Baby Konan
 site_description: "PowerShell module that interacts with Kaspa Explorer API and Kasplex API to allow for analyzing KRC20 token information."
 site_author: 'Baby Konan Coin'
+repo_name:  BabyKonanCoin/KaspaAPI
 repo_url: https://github.com/BabyKonanCoin/KaspaAPI
 
 theme:
   name: material
   palette:
     scheme: slate
-
-
 
 nav:
   - Home: index.md
@@ -17,6 +16,7 @@ nav:
       - Configuration: getting-started/configuration.md
       - Usage Guide: getting-started/usage.md
   - Commands:
+      - Get-KasAPIVersions: en-US/Get-KasAPIVersions.md
       - Get-KasAppDataPath: en-US/Get-KasAppDataPath.md
       - Get-KasBanner: en-US/Get-KasBanner.md
       - Get-KasDataDump: en-US/Get-KasDataDump.md
@@ -47,6 +47,7 @@ plugins:
       enable_cache: True
       size: [800, 600]
       extensions: ['.jpg', '.jpeg', '.png', '.gif', '.svg']
+
 
 
 

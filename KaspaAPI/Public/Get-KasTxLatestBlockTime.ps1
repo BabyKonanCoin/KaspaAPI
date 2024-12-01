@@ -15,7 +15,7 @@ function Get-KasTxLatestBlockTime {
     }
 
     # Define the root endpoint of the API
-    $endpoint = 'https://api.kaspa.org'
+    $endpoint = $script:KaspaExlorerAPI
     $addressesPath = 'addresses'
     $fullTransaction = 'full-transactions'
 

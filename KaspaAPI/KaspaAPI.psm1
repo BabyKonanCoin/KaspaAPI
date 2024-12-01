@@ -16,3 +16,7 @@ Export-ModuleMember -Function $public.Basename
 
 # module-scoped mutex
 $script:KasFileWriteMutex = New-Object System.Threading.Mutex($false, "KasFileWriteMutex")
+
+$apiInfo = Get-KasAPIVersions
+$script:KaspaExlorerAPI = $apiInfo.KaspaExplorerAPI
+$script:KasplexAPI = $apiInfo.KasplexAPI

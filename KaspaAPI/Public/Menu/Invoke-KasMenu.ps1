@@ -31,8 +31,11 @@ function Invoke-KasMenu {
 
     # Main menu loop
     do {
+        # Display the menu
         Get-KasBanner
         Show-KasMenu
+
+        # Wait for user input
         $choice = Read-Host
 
         switch ($choice) {
@@ -41,6 +44,7 @@ function Invoke-KasMenu {
                 Write-Host "`nCurrent API Versions:" -ForegroundColor Cyan
                 Write-Host "KasplexAPI: $($apiVersions.KasplexAPI)" -ForegroundColor White
                 Write-Host "KaspaExplorerAPI: $($apiVersions.KaspaExplorerAPI)" -ForegroundColor White
+                PauseMenu
             }
             2 {
                 # Set KasplexAPI version
@@ -63,6 +67,7 @@ function Invoke-KasMenu {
                     }
                     Default { Write-Host "Invalid choice. No changes made." -ForegroundColor Red }
                 }
+                PauseMenu
             }
             3 {
                 # Set KaspaExplorerAPI version
@@ -85,6 +90,7 @@ function Invoke-KasMenu {
                     }
                     Default { Write-Host "Invalid choice. No changes made." -ForegroundColor Red }
                 }
+                PauseMenu
             }
             0 {
                 # Confirm changes and save
@@ -103,6 +109,7 @@ function Invoke-KasMenu {
                 } else {
                     Write-Host "Changes not saved. Returning to the menu..." -ForegroundColor Yellow
                 }
+                PauseMenu
             }
             q {
                 # Quit without saving
@@ -111,7 +118,13 @@ function Invoke-KasMenu {
             }
             Default {
                 Write-Host "Invalid choice. Please select a valid option." -ForegroundColor Red
+                PauseMenu
             }
         }
     } while ($choice -ne "q" -and $choice -ne "0")
+}
+
+function PauseMenu {
+    Write-Host "`nPress any key to return to the menu..." -ForegroundColor Cyan
+    [System.Console]::ReadKey($true) | Out-Null
 }

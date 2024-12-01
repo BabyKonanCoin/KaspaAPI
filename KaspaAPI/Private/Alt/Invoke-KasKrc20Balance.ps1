@@ -52,7 +52,7 @@ function Invoke-KasKrc20Balance {
         Write-Verbose "Processing address: $address"
 
         # Construct the Kasplex API URL
-        $kasplexApiUri = "https://api.kasplex.org/v1/krc20/address/$address/token/$tick"
+        $kasplexApiUri = "$script:KasplexAPI/krc20/address/$address/token/$tick"
 
         try {
             # Get the API response for the address
