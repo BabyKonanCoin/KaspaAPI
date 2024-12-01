@@ -32,7 +32,7 @@ function Get-KasTop50 {
             Add-Type -AssemblyName System.Windows.Forms
 
             # Construct the API URI
-            $kasplexApiUri = "$script:KasplexAPI/v1/krc20/token/$tick"
+            $kasplexApiUri = "$script:KasplexAPI/krc20/token/$tick"
 
             # Fetch the data from the Kasplex API
             $kasplexData = Invoke-RestMethod -Uri $kasplexApiUri

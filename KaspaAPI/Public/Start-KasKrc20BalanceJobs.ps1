@@ -41,7 +41,7 @@ function Start-KasKrc20BalanceJobs {
         $job = Start-Job -ScriptBlock {
             param ($address, $tick)
             Write-Verbose "Starting job for address: $address"
-            $kasplexApiUri = "$script:KasplexAPI/v1/krc20/address/$address/token/$tick"
+            $kasplexApiUri = "$script:KasplexAPI/krc20/address/$address/token/$tick"
 
             try {
                 $kasplexData = Invoke-RestMethod -Uri $kasplexApiUri
