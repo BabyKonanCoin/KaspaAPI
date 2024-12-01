@@ -19,10 +19,10 @@ function Get-KasTop50 {
         [Parameter(Mandatory = $false)]
         [switch]$ReturnAddressesOnly,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'FilePathSet')]
+        [Parameter(Mandatory = $false)]
         [string]$FilePath, # Optional file path for saving results
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'SelectPathSet')]
+        [Parameter(Mandatory = $false)]
         [switch]$SelectPathToExport # Prompts for save location if specified
     )
 

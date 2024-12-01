@@ -8,6 +8,8 @@ theme:
   palette:
     scheme: slate
 
+
+
 nav:
   - Home: index.md
   - Getting Started:
@@ -31,13 +33,20 @@ nav:
       - Start-KasBlockTxKrc20: en-US/Start-KasBlockTxKrc20.md
       - Start-KasKrc20BalanceJobs: en-US/Start-KasKrc20BalanceJobs.md
       - Start-KasTest: en-US/Start-KasTest.md
-      - Start-KasTest2: en-US/Start-KasTest2.md
       - Use-KasFileWriteMutex: en-US/Use-KasFileWriteMutex.md
       - Write-KasLogMessage: en-US/Write-KasLogMessage.md
       - Write-KasMemoryUsage: en-US/Write-KasMemoryUsage.md
       - Write-KasPageFileUsage: en-US/Write-KasPageFileUsage.md
-  - Changelog: changelog.md
+  - Changelog: CHANGELOG.md
 
+plugins:
+  - search:
+  - resize-images:
+      source-dir: assets-large
+      target-dir: assets
+      enable_cache: True
+      size: [1200, 600]
+      extensions: ['.jpg', '.jpeg', '.png', '.gif', '.svg']
 
 
 

@@ -12,16 +12,9 @@ Retrieves top 50 data for a given token tick from Kasplex API and optionally exp
 
 ## SYNTAX
 
-### FilePathSet
 ```
-Get-KasTop50 -Tick <String> [-ReturnAddressesOnly] [-FilePath <String>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
-```
-
-### SelectPathSet
-```
-Get-KasTop50 -Tick <String> [-ReturnAddressesOnly] [-SelectPathToExport] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-KasTop50 [-Tick] <String> [-ReturnAddressesOnly] [[-FilePath] <String>] [-SelectPathToExport]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +44,7 @@ Parameter Sets: (All)
 Aliases:
 
 Required: True
-Position: Named
+Position: 1
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -77,11 +70,11 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: FilePathSet
+Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: Named
+Position: 2
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -93,7 +86,7 @@ Prompts for save location if specified
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: SelectPathSet
+Parameter Sets: (All)
 Aliases:
 
 Required: False
