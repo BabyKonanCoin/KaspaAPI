@@ -5,6 +5,6 @@ scratch/
 
 testResults.xml
 
-images-large # or whatever you have set as source-dir
+assets-large # or whatever you have set as source-dir
 
 .resize-hash # if you have enabled caching

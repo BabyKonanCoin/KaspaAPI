@@ -2,7 +2,7 @@
 
 Welcome to the **KaspaAPI** documentation. This PowerShell module interacts with the Kaspa Explorer API and Kasplex API to analyze KRC20 token information.
 
-![KaspaAPI-Banner](images/home-banner.jpg)
+![KaspaAPI-Banner](assets/home-banner.jpg)
 
 ## Highlights
 
