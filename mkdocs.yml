@@ -45,8 +45,10 @@ plugins:
       source-dir: assets-large
       target-dir: assets
       enable_cache: True
-      size: [1200, 600]
+      size: [800, 600]
       extensions: ['.jpg', '.jpeg', '.png', '.gif', '.svg']
+
+
 
 
 
